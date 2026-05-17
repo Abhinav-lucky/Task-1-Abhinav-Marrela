@@ -28,12 +28,10 @@ To understand and practice fundamental Linux commands used in real-world DevOps 
 # 📂 Project Structure
 
 ```bash
-project/
+app/
 ├── logs/
-│   └── server.log
-├── config/
-│   └── config.conf
-└── src/
+│   └── server.bak
+├── config.conf
 ```
 
 ---
@@ -77,29 +75,28 @@ whoami
 
 ### 1️⃣ Create Directory Structure
 ```bash
-mkdir -p project/logs
-mkdir -p project/config
+mkdir -p app/logs
 ```
 
 ### 2️⃣ Create Configuration File
 ```bash
-touch project/config/config.conf
+touch app/config.conf
 ```
 
 ### 3️⃣ Create Log File
 ```bash
-echo "Server Started" > project/logs/server.log
+echo "Server Started" > app/logs/server.log
 ```
 
 ### 4️⃣ Verify Structure
 ```bash
 pwd
-ls -R project
+ls -R app
 ```
 
 ### 5️⃣ Backup Log File
 ```bash
-mv project/logs/server.log project/logs/server.bak
+mv app/logs/server.log app/logs/server.bak
 ```
 
 ---
